@@ -1,8 +1,182 @@
 [
   {
     "id": "T001",
-    "assigned_to": "S01",
+    "assigned_to": "S-01",
     "description": "Draft Q1 cold outreach list",
-    "approved": false
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-04",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "List contains 200+ qualified prospects",
+      "Each prospect includes name, company, title, email, ICP fit score",
+      "List segmented by industry and priority tier"
+    ]
+  },
+  {
+    "id": "T002",
+    "assigned_to": "S-01",
+    "description": "Finalize 3-part email sequence for LeadX",
+    "status": "pending",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-01",
+    "dependencies": ["T001"],
+    "acceptance_criteria": [
+      "3 emails written, reviewed by MGR-SALES",
+      "Each email < 120 words",
+      "A/B variants for subject lines included"
+    ]
+  },
+  {
+    "id": "T003",
+    "assigned_to": "S-02",
+    "description": "Research top 20 prospects for healthcare vertical",
+    "status": "pending",
+    "priority": "medium",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-02",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "20 prospects with decision-maker contact info",
+      "Recent company event or pain point referenced per prospect",
+      "BANT criteria assessed for each"
+    ]
+  },
+  {
+    "id": "T004",
+    "assigned_to": "MGR-SALES",
+    "description": "Update CRM tags and pipeline stage definitions",
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-06-30",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "All stages renamed to standard definitions",
+      "Tag taxonomy documented and shared with team",
+      "S-01 and S-02 confirm understanding"
+    ]
+  },
+  {
+    "id": "T005",
+    "assigned_to": "O-01",
+    "description": "Write SOP for order fulfillment process v2",
+    "status": "pending",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-05",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "SOP covers receive → pack → ship → confirm delivery",
+      "Quality gate at each step documented",
+      "Escalation path for failures defined"
+    ]
+  },
+  {
+    "id": "T006",
+    "assigned_to": "O-01",
+    "description": "Audit vendor contracts for cost overruns",
+    "status": "pending",
+    "priority": "medium",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-07",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "All active vendors reviewed",
+      "Contracts with > 15% overruns flagged",
+      "Renegotiation plan drafted for top 3"
+    ]
+  },
+  {
+    "id": "T007",
+    "assigned_to": "T-01",
+    "description": "Deploy monitoring stack to staging",
+    "status": "pending",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-06-30",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "Metrics, logs, traces all flowing from staging",
+      "Dashboards created for top 3 services",
+      "Alerts tested and verified"
+    ]
+  },
+  {
+    "id": "T008",
+    "assigned_to": "T-01",
+    "description": "Review and merge open PRs in tech repo",
+    "status": "in_progress",
+    "priority": "medium",
+    "created_at": "2026-06-27",
+    "due_at": "2026-06-29",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "All PRs reviewed within 4h",
+      "Blocking issues resolved",
+      "Non-blocking issues added to tech backlog"
+    ]
+  },
+  {
+    "id": "T009",
+    "assigned_to": "CEO-01",
+    "description": "Review Q1 OKR progress and adjust targets",
+    "status": "pending",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-01",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "All department metrics reviewed",
+      "OKR scores computed",
+      "Q2 targets drafted and shared with managers"
+    ]
+  },
+  {
+    "id": "T010",
+    "assigned_to": "MGR-OPS",
+    "description": "Present cost-savings summary at weekly ops review",
+    "status": "pending",
+    "priority": "medium",
+    "created_at": "2026-06-27",
+    "due_at": "2026-06-30",
+    "dependencies": ["T006"],
+    "acceptance_criteria": [
+      "Summary covers all departments",
+      "Top 5 savings opportunities ranked",
+      "Executive summary included"
+    ]
+  },
+  {
+    "id": "T011",
+    "assigned_to": "MGR-TECH",
+    "description": "Approve new SaaS tool spend request for $200",
+    "status": "pending",
+    "priority": "low",
+    "created_at": "2026-06-27",
+    "due_at": "2026-06-28",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "Request reviewed against existing tools",
+      "Decision documented: approve / reject / defer",
+      "Budget tracker updated"
+    ]
+  },
+  {
+    "id": "T012",
+    "assigned_to": "S-02",
+    "description": "A/B test subject line variants for outbound",
+    "status": "in_progress",
+    "priority": "high",
+    "created_at": "2026-06-27",
+    "due_at": "2026-07-03",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "3 variants, 20 emails each, 3-day run",
+      "Winner identified based on open + reply rate",
+      "New default subject line documented"
+    ]
   }
 ]

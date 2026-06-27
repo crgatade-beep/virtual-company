@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-log>
+  <!-- Global work log format
+       Use ISO timestamps, one event per entry.
+       Append-only; do not delete historical entries.
+  -->
+  <log>
+    <entry>
+      <timestamp>2026-06-27T09:00:00+05:30</timestamp>
+      <agent>S-01</agent>
+      <event>Morning standalone complete. Outreach list drafted. Next: finalize sequences.</event>
+    </entry>
+    <entry>
+      <timestamp>2026-06-27T09:05:00+05:30</timestamp>
+      <agent>T-01</agent>
+      <event>Deploy pipeline v2 audited. Smoke tests pending staging run.</event>
+    </entry>
+    <entry>
+      <timestamp>2026-06-27T09:10:00+05:30</timestamp>
+      <agent>O-01</agent>
+      <event>Ops dashboard metrics reviewed. Low-risk warnings cleared.</event>
+    </entry>
+    <entry>
+      <timestamp>2026-06-27T09:15:00+05:30</timestamp>
+      <agent>MGR-TECH</agent>
+      <event>Weekly security review scheduled. All PRs assigned for Tuesday sync.</event>
+    </entry>
+  </log>
+</work-log>
